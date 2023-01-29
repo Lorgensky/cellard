@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/79fea2c827.js" crossorigin="anonymous"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Koulen&family=Wire+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/79fea2c827.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <main>
+        <div class="container">
+            <div class="dashboard">
+                <h1 class="title">Admin Panel</h1>
+                <a href="create.html" class="btn_pub">Creer un article +</a>
+
+                <h2 class="subtitle">Tableau des articles</h2>
+
+                <div style="overflow-x: auto;">
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>TITRE</th>
+                            <th>DATE</th>
+                            <th>ACTION</th>
+                        </tr>
+                            <tr>
+                                <td>01</td>
+                                <td>Joe Biden</td>
+                                <td>01/03/23</td>
+                                <td>
+                                    <form action="POST" action="" onsubmit="return submitForm(this);">
+                                        <input type="submit" value="Supprimer" />
+                                        <a href="#">Modifier</a>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>02</td>
+                                <td>Une femme de menage</td>
+                                <td>01/05/23</td>
+                                <td>
+                                    <form action="POST" action="" onsubmit="return submitForm(this);">
+                                        <input type="submit" value="Supprimer" />
+                                        <a href="#">Modifier</a>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td>A qui la faute?</td>
+                                <td>01/06/23</td>
+                                <td>
+                                    <form action="POST" action="" onsubmit="return submitForm(this);">
+                                        <input type="submit" value="Supprimer" />
+                                        <a href="#">Modifier</a>
+                                    </form>
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script src="sweetalert.min.js"></script>
+        <script>
+            function submitForm(form) {
+                swal({
+                    title:"Supprimer",
+                    text: "Voulez vous vraiment supprimer cet article",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                .then((isOkay) => {
+                    if(isOkay) {
+                        form.submit();
+                    }
+                });
+                return false;
+            }
+        </script>
+    </main>
+</body>
+</html>

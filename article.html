@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link rel="stylesheet" href="article.css">
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6463/6463648.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Koulen&family=Wire+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/79fea2c827.js" crossorigin="anonymous"></script>
+
+    <script>  
+        $(function(){ 
+          $("#menu").load("menu.html");  
+        }); 
+    </script> 
+</head>
+<body>
+    <main class="container">
+         <!-- menu -->
+        <div id="menu"></div>
+
+        <div class="head">
+            <div class="image">
+                <img src="images/femme_de_menage.jpg" alt="icon du texte" style="width: 100%;">
+            </div>
+            <div class="head_title">
+                <h1>Une femme de menage</h1>
+
+                <div class="subtitle">
+                    <div class="sub_info">
+                        <h2>Schinaider Cellard</h2>
+                        <p>24 octobre 2022 ∙ 6 minutes de lecture</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text">
+                <h1>Une femme de mennage</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugiat repellat aperiam officiis hic 
+                    facere ex fugit tempore itaque quidem impedit voluptatem, aliquam, porro consequuntur! Natus eveniet esse
+                     aut hic quidem voluptatem, nostrum ipsum sequi ipsa nemo, assumenda omnis! Assumenda suscipit omnis modi 
+                     obcaecati animi quam nulla qui totam tenetur labore ipsa, repellendus consequatur nam alias dignissimos 
+                     laudantium ea soluta corrupti. Suscipit voluptatibus hic ad accusantium, officiis alias quae. Sequi facere 
+                     aut nesciunt odio dicta impedit perspiciatis eius exercitationem? Illum asperiores sed recusandae earum 
+                     ipsa omnis qui ipsum fugiat architecto accusamus in repudiandae repellendus tenetur reiciendis, magni 
+                     ratione, ad ipsam.
+
+                    <p>
+                        lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugiat repellat aperiam officiis hic
+                        facere ex fugit tempore itaque quidem impedit voluptatem, aliquam, porro consequuntur! Natus eveniet esse
+                         aut hic quidem voluptatem, nostrum ipsum sequi ipsa nemo, assumenda omnis! Assumenda suscipit omnis modi
+                         obcaecati animi quam nulla qui totam tenetur labore ipsa, repellendus consequatur nam alias dignissimos
+                         laudantium ea soluta corrupti. Suscipit voluptatibus hic ad accusantium, officiis alias quae. Sequi facere
+                         aut nesciunt odio dicta impedit perspiciatis eius exercitationem? Illum asperiores sed recusandae earum
+                         ipsa omnis qui ipsum fugiat architecto accusamus in repudiandae repellendus tenetur reiciendis, magni
+                         ratione, ad ipsam.
+                    </p>
+                </p>          
+        </div>
+
+        <div class="comments">
+            <div class="commentaires">
+                <h1 class="comment_title">Les commentaires</h1>
+                <div class="comment_item">
+                    <div class="avatar">
+                        <i class="fa-solid fa-user"></i>
+                        <h1>John Lorgensky</h1>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minima officia nihil dolore facilis ab.</p>
+                </div>
+                <div class="comment_item">
+                    <div class="avatar">
+                        <i class="fa-solid fa-user"></i>
+                        <h1>Abduelson Lyvert</h1>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minima officia nihil dolore facilis ab.</p>
+                </div>
+                <div class="comment_item">
+                    <div class="avatar">
+                        <i class="fa-solid fa-user"></i>
+                        <h1>Innocent Jameson</h1>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minima officia nihil dolore facilis ab.</p>
+                </div>
+            </div>
+        </div>
+
+        <form action="" method="post">
+            <div class="comment">
+                <h1 class="comment_sub">Laissez votre commentaire</h1>
+                <input name="nom" type="text" placeholder="Entrer votre nom...">
+                <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Laissez un commentaire..." style="resize: none;"></textarea>
+                <a href="#" class="btn_submit"><button type="submit">Commentez</button></a>
+            </div>
+        </form>
+
+        <div class="container">
+            <div class="articles">
+                <h1 class="populaires">Les plus populaires</h1>
+                <div class="articles_grid">
+                   
+                        <a href="article.html" class="articles_card">
+                            <div class="card_thumbnail">
+                                <img src="images/femme_de_menage.jpg" alt="icon_femme de menage" style="width: 100%;">
+                            </div>
+                            <div class="card_title">
+                                <h1>Une femme de Menage - [poeme]</h1>
+                                <h2>Ecrit par Schinaider Cellard</h2>
+                            </div>
+                            <div class="card_footer">
+                                <h3>22 Novembre 2022</h3>
+                                <div class="views">
+                                    <i class="fa-sharp fa-solid fa-eye"></i>
+                                    <span>220</span>
+                                </div>
+                                <h3>55 <span><i class="fa-solid fa-message"></i></span></h3>
+                            </div>
+                        </a>
+                        
+                        <a href="article.html" class="articles_card">
+                            <div class="card_thumbnail">
+                                <img src="images/femme_de_menage.jpg" alt="icon_femme de menage" style="width: 100%;">
+                            </div>
+                            <div class="card_title">
+                                <h1>Une femme de Menage - [poeme]</h1>
+                                <h2>Ecrit par Schinaider Cellard</h2>
+                            </div>
+                            <div class="card_footer">
+                                <h3>22 Novembre 2022</h3>
+                                <div class="views"><i class="fa-sharp fa-solid fa-eye"></i><span><h3>220</h3></span></div>
+                                <h3>55 <span><i class="fa-solid fa-message"></i></span></h3>
+                            </div>
+                        </a>
+
+                        <a href="article.html" class="articles_card">
+                            <div class="card_thumbnail">
+                                <img src="images/femme_de_menage.jpg" alt="icon_femme de menage" style="width: 100%;">
+                            </div>
+                            <div class="card_title">
+                                <h1>Une femme de Menage - [poeme]</h1>
+                                <h2>Ecrit par Schinaider Cellard</h2>
+                            </div>
+                            <div class="card_footer">
+                                <h3>22 Novembre 2022</h3>
+                                <div class="views"><i class="fa-sharp fa-solid fa-eye"></i><span><h3>220</h3></span></div>
+                                <h3>55 <span><i class="fa-solid fa-message"></i></span></h3>
+                            </div>
+                        </a>
+
+                </div>
+                    <a href="#" class="btn_more">Voir plus <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+                <!-- footer section start here  -->
+         <footer>
+            <div class="footer_content container">
+                <p>Les Ennois 2023. &copy; Tous droits Reserves. Developper par <a href="#">TechIzi</a></p>
+                <div class="links">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-square-instagram"></i>  
+                </div>
+                
+            </div>
+    </footer>
+    <!-- footer section end here  -->
+        
+    </main>
+</body>
+</html>
